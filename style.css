@@ -37,7 +37,7 @@ body{
     font-family: "HankenGrotesk", sans-serif;
     border-radius: 2em;
     background-color: var(--White);
-    width: 1200px;
+    width: 735px;
     max-width: 1440px;
     min-width: 375px;
 }
