@@ -37,7 +37,7 @@ body{
     font-family: "HankenGrotesk", sans-serif;
     border-radius: 2em;
     background-color: var(--White);
-    width: 735px;
+    width: 730px;
     max-width: 1440px;
     min-width: 375px;
 }
@@ -47,7 +47,7 @@ body{
 }
 
 .result{
-    width: 45%;
+    width: 50%;
     padding: 2em;
     border-radius: 2rem;
     background: linear-gradient(to bottom, 
