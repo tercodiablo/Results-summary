@@ -48,7 +48,7 @@ body{
     border-radius: 1rem;
     gap: 1rem;
 }
-.left h4{
+.left h3{
     text-align: center;
     padding-bottom: 1.5rem;
     color: var(--Light-lavender);
