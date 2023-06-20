@@ -25,158 +25,127 @@
 }
 
 body{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Pale-blue);
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
-
-.card{
-    box-shadow: rgba(0, 0, 0, .2) 0px 3px 9px;
-    font-family: "HankenGrotesk", sans-serif;
-    border-radius: 2em;
-    background-color: var(--White);
+.container{
+    display: flex;
     width: 730px;
-    max-width: 1440px;
-    min-width: 375px;
-}
-.card-container{
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px hsla(241, 81%, 54%, .1);
 }
 
-.result{
-    width: 50%;
-    padding: 2em;
-    border-radius: 2rem;
-    background: linear-gradient(to bottom, 
-        var(--Light-slate-blue-background),
-        var(--Light-royal-blue-background));
+.left{
+    color: white;
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    padding: 1.3rem;
+    width: 45%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 1rem;
     gap: 1rem;
 }
-.result .title{
+.left h4{
+    text-align: center;
+    padding-bottom: 1.5rem;
     color: var(--Light-lavender);
-    margin-bottom: 1rem;
 }
-
-.result .circle{
+.circle {
+    background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(
-        var(--Violet-blue-circle),
-        var(--Persian-blue-circle));
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
-.circle h1{
+.circle h1 {
     color: var(--White);
-    font-size: 3rem;
+    font-size: 4rem;
 }
-.circle p{
+.circle p {
     color: var(--Light-lavender);
-    font-size: 1.1rem;
+    font-weight: bold;
+}
+.left h2{
+    margin-top: 1.5rem;
+    color: var(--White);
+}
+.left .info {
+    color: var(--Light-lavender);
+    font-weight: 100;
+    margin-top: .8rem;
+    line-height: 1.3rem;
 }
 
-.result h2{
-    color: var(--White);
-    font-size: 1.5rem;
-    margin-top: 1rem;
+.right{
+    width: 55%;
+    padding: 1.2rem;
 }
-.result .info{
-    color: var(--Light-lavender);
-    padding: 0 3rem;
-    font-size: 1.2rem;
-}
-
-.summary{
-    width: 54%;
-    margin-top: 1rem;
-    padding: 1.5rem 2rem;
+.score-con{
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.summary .title{
-    color: black;
-    font-weight: 800;
-}
-.score{
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
+    font-weight: 600;
+    gap: .3rem;
 }
 .row{
     display: flex;
-    border-radius: 10px;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem .5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
 }
+
 .row:nth-child(1){
     background-color: hsla(0, 100%, 67%, .1);
 }
-.row:nth-child(1) .badge strong{
+.row:nth-child(1) .score-con span{
     color: var(--Light-red);
 }
 .row:nth-child(2){
     background-color: hsla(39, 100%, 56%, .1);
 }
-.row:nth-child(2) .badge strong{
+.row:nth-child(2) .score-con span{
     color: var(--Orangey-yellow);
 }
 .row:nth-child(3){
     background-color: hsla(166, 100%, 37%, .1);
 }
-.row:nth-child(3) .badge strong{
+.row:nth-child(3) .score-con span{
     color: var(--Green-teal);
 }
 .row:nth-child(4){
     background-color: hsla(234, 85%, 45%, .1);
 }
-.row:nth-child(4) .badge strong{
+.row:nth-child(4) .score-con span {
     color: var(--Cobalt-blue);
 }
 
-.badge{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+.gray{
+    color: hsla(240, 1%, 19%, 0.4);
+    font-weight: 600;
 }
-.row p{
-    color: hsla(224, 30%, 27%, .5);
+.dark-text{
+    color: hsla(240, 1%, 19%, 1);
     font-weight: bold;
 }
-.row p strong{
-    color: var(--Dark-gray-blue);
-}
-
 
 .btn{
     background-color: var(--Dark-gray-blue);
     border: none;
-    margin: 1.1rem 1.5rem 1.8rem 1.5rem;
-    padding: 1rem;
+    margin: 1rem 1.8rem;
+    padding: 1.1rem;
     border-radius: 2rem;
     font-size: 1rem;
+    width: 85%;
     color: var(--White);
 }
 .btn:hover, .btn:active{
     background: linear-gradient(to bottom, 
         var(--Light-slate-blue-background),
         var(--Light-royal-blue-background));
-}
-
-footer {
-    bottom: 0;
-    margin-top: 1em;
-    font-size: .7em;
-    text-align: center;
 }
